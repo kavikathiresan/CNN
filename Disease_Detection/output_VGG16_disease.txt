@@ -1,0 +1,69 @@
+"F:\computer vision\code\Scripts\python.exe" "F:\computer vision\code\Opencv_code\VGG16_Disease.py" 
+2023-10-19 07:00:44.426881: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+ flatten (Flatten)           (None, 25088)             0         
+                                                                 
+ dense (Dense)               (None, 3)                 75267     
+                                                                 
+=================================================================
+Total params: 14789955 (56.42 MB)
+Trainable params: 14789955 (56.42 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+None
+Found 5239 images belonging to 3 classes.
+Found 1296 images belonging to 3 classes.
+Epoch 1/2
+164/164 [==============================] - 2200s 13s/step - loss: 1.5051 - accuracy: 0.6413 - val_loss: 0.8608 - val_accuracy: 0.6659
+Epoch 2/2
+164/164 [==============================] - 2306s 14s/step - loss: 0.8552 - accuracy: 0.6599 - val_loss: 0.8266 - val_accuracy: 0.6659
+Original size of image:(1072, 1321, 3)
+After resize of image:(224, 224, 3)
+1/1 [==============================] - 0s 252ms/step
+[[0.1070807  0.19694036 0.69597894]]
+2
+PNEUMONIA
+
+Process finished with exit code 0
