@@ -11,3 +11,5 @@ Transfer learning in a CNN refers to using a pre-trained model on a similar task
 . VGG-16 is a convolutional neural network that is 16 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database 
 ## VVG19
 -VGG-19 is a convolutional neural network that is 19 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database [1]. The pretrained network can classify images into 1000 object categories
+# Face Detection
+-Open cv frameworks
