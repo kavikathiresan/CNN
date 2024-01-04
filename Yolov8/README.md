@@ -1,5 +1,6 @@
-## YOLOv8
+# YOLOv8
 YOLOv8 is a new state-of-the-art computer vision model built by Ultralytics, the creators of YOLOv5. The YOLOv8 model contains out-of-the-box support for object detection, classification, and segmentation tasks, accessible through a Python package as well as a command line interface.
+# Capturing the live video
 We create a yolov8.py file where we import the initial requirements, such as Opencv and get the base ready for detecting through the webcam.
 Install all the necessary dependencies, such as ultralytics, opencv-python and other dependencies.
 we’ll capture frames from the webcam using OpenCV. This can be done using the VideoCapture function in OpenCV.
